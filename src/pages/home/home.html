@@ -1,18 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="micolor">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  
+  <img src="/assets/images/curso-cover2.jpg" alt="">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <h1 class="titulo">REPOSI</h1>
+  <h2 class="titulo">Report Pollution Site</h2>
+  
+  <p class="texto">REPOSI por su siglas en inglés, te permitirá reportar sitios
+     de contaminación por residuos. Con una interfaz amigable y robusta para el usuario. 
+    Encontrarás varias opciones como Reportar Área, Ver mis reportes o ver todos los reportes, 
+  así como una ventana de ayuda y contacto. Empecemos. Para un reporte rápido podrás iniciarlo con 
+el siguiente botón que aparece a la derecha...</p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+   <img src="/assets/images/curso-cover.jpg" alt="">
+
+   <ion-fab right class="boton">
+        <button ion-fab (tap)="cambiarPage()" color="danger">
+          <ion-icon name="md-pin"></ion-icon>
+        </button>
+      </ion-fab>
+
 </ion-content>
